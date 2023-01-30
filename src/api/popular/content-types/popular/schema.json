@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "populars",
+  "info": {
+    "singularName": "popular",
+    "pluralName": "populars",
+    "displayName": "Popular",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Slug": {
+      "type": "uid"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "features.features"
+    },
+    "imgcolorslider": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
