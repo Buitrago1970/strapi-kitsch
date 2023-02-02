@@ -1,7 +1,9 @@
+// path: ./config/env/production/server.js
+
 module.exports = ({ env }) => ({
-  host: env('HOST', '0.0.0.0'),
-  port: env.int('PORT', 1337),
+  proxy: true,
+  url: "", // replaces `host` and `port` properties in the development environment
   app: {
-    keys: env.array('APP_KEYS'),
+    keys: env.array("APP_KEYS"),
   },
 });
